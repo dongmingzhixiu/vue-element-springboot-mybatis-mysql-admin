@@ -1,0 +1,168 @@
+body {
+	/**基本色*/
+	--primarycolor: rgba(64, 158, 255, 1);
+	--primarycolor9: rgba(64, 158, 255, .9);
+	--primarycolor8: rgba(64, 158, 255, .8);
+	--primarycolor7: rgba(64, 158, 255, .7);
+	--primarycolor6: rgba(64, 158, 255, .6);
+	--primarycolor5: rgba(64, 158, 255, .5);
+	--primarycolor4: rgba(64, 158, 255, .4);
+	--primarycolor3: rgba(64, 158, 255, .3);
+	--primarycolor2: rgba(64, 158, 255, .2);
+	--primarycolor1: rgba(64, 158, 255, .1);
+
+	/**成功颜色 success*/
+	--successcolor: rgba(103, 194, 58, 1);
+	--successcolor9: rgba(103, 194, 58, .9);
+	--successcolor8: rgba(103, 194, 58, .8);
+	--successcolor7: rgba(103, 194, 58, .7);
+	--successcolor6: rgba(103, 194, 58, .6);
+	--successcolor5: rgba(103, 194, 58, .5);
+	--successcolor4: rgba(103, 194, 58, .4);
+	--successcolor3: rgba(103, 194, 58, .3);
+	--successcolor2: rgba(103, 194, 58, .2);
+	--successcolor1: rgba(103, 194, 58, .1);
+
+	/**警告颜色 warning */
+	--warningcolor: rgba(230, 162, 60, 1);
+	--warningcolor9: rgba(230, 162, 60, .9);
+	--warningcolor8: rgba(230, 162, 60, .8);
+	--warningcolor7: rgba(230, 162, 60, .7);
+	--warningcolor6: rgba(230, 162, 60, .6);
+	--warningcolor5: rgba(230, 162, 60, .5);
+	--warningcolor4: rgba(230, 162, 60, .4);
+	--warningcolor3: rgba(230, 162, 60, .3);
+	--warningcolor2: rgba(230, 162, 60, .2);
+	--warningcolor1: rgba(230, 162, 60, .1);
+
+
+	/**危险颜色 danger */
+	--dangercolor: rgba(245, 108, 108, 1);
+	--dangercolor9: rgba(245, 108, 108, .9);
+	--dangercolor8: rgba(245, 108, 108, .8);
+	--dangercolor7: rgba(245, 108, 108, .7);
+	--dangercolor6: rgba(245, 108, 108, .6);
+	--dangercolor5: rgba(245, 108, 108, .5);
+	--dangercolor4: rgba(245, 108, 108, .4);
+	--dangercolor3: rgba(245, 108, 108, .3);
+	--dangercolor2: rgba(245, 108, 108, .2);
+	--dangercolor1: rgba(245, 108, 108, .1);
+
+	/**信息颜色 info */
+	--infocolor: rgba(144, 147, 153, 1);
+	--infocolor9: rgba(144, 147, 153, .9);
+	--infocolor8: rgba(144, 147, 153, .8);
+	--infocolor7: rgba(144, 147, 153, .7);
+	--infocolor6: rgba(144, 147, 153, .6);
+	--infocolor5: rgba(144, 147, 153, .5);
+	--infocolor4: rgba(144, 147, 153, .4);
+	--infocolor3: rgba(144, 147, 153, .3);
+	--infocolor2: rgba(144, 147, 153, .2);
+	--infocolor1: rgba(144, 147, 153, .1);
+
+
+
+	/**内边距 */
+	--padding: 10px;
+	--padding1: 2px;
+	--padding2: 4px;
+	--padding3: 6px;
+	--padding4: 8px;
+	--padding5: 10px;
+	--padding6: 12px;
+	--padding7: 14px;
+	--padding8: 16px;
+	--padding9: 18px;
+	--padding10: 20px;
+
+	/** 外边距 */
+	--margin: 10px;
+	--margin1: 2px;
+	--margin2: 4px;
+	--margin3: 6px;
+	--margin4: 8px;
+	--margin5: 10px;
+	--margin6: 12px;
+	--margin7: 14px;
+	--margin8: 16px;
+	--margin9: 18px;
+	--margin10: 20px;
+	
+	
+	/**圆角 */
+	--radius1: 2px;
+	--radius2: 4px;
+	--radius3: 6px;
+	--radius4: 8px;
+	--radius5: 10px;
+	--radius6: 12px;
+	--radius7: 14px;
+	--radius8: 16px;
+	--radius9: 18px;
+	--radius10: 20px;
+	
+	/**
+	 * 宽度
+	 */
+
+
+	
+
+	/**字体大小 */
+	--font-size:12px;
+	--font-size14:14px;
+	--font-size15:15px;
+	--font-size16:16px;
+	--font-size18:18px;
+	--font-size20:20px;
+	--font-size22:22px;
+	--font-size24:24px;
+	--font-size26:26px;
+	--font-size28:28px;
+	--font-size30:30px;
+	--font-size32:32px;
+	--font-size36:36px;
+	--font-size38:38px;
+	--font-size40:40px;
+	--font-size52:52px;
+	
+	
+	--size1:1px;
+	--size2:2px;
+	--size3:3px;
+	--size4:4px;
+	--size5:5px;
+	--size6:6px;
+	--size7:7px;
+	--size8:8px;
+	--size9:9px;
+	--size10:10px;
+	--size12:12px;
+	--size14:14px;
+	--size16:16px;
+	--size18:18px;
+	--size20:20px;
+	--size27:27px;
+	--size30:30px;
+	--size31:31px;
+	--size32:32px;
+	--size40:40px;
+	--size42:42px;
+	--size48:48px;
+	
+	/**常用整数尺寸*/
+	--size60 :60px;
+	--size80 :80px;
+	--size100:100px;
+	--size120:120px;
+	--size140:140px;
+	--size160:160px;
+	--size180:180px;
+	--size200:200px;
+	--size220:220px;
+	--size240:240px;
+	--size260:260px;
+	--size280:280px;
+	--size300:300px;
+	
+}
