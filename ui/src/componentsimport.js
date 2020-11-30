@@ -5,6 +5,8 @@ import pageHelper from '@/components/page-helper.vue'
 import treeMenu from '@/components/tree-menu.vue'
 import pageHead from '@/components/page-head.vue'
 import pageEditor from '@/components/page-editor.vue'
+import pageEcharts from '@/components/page-echarts.vue';
+import echartsCodeEditor from '@/components/echarts-code-editor.vue';
 import calc from '@/components/calc.vue'
 import listWhere from '@/components/list-where.vue'
 import layoutEditor from '@/components/layout-editor.vue'
@@ -32,6 +34,12 @@ import sysRoule from '@/pages/sys-roule/list.vue'
 import sysRouleEditor from '@/pages/sys-roule/editor.vue'
 
 
+/**
+ * 图表页面
+ */
+import echarts from '@/pages/echarts/echarts.vue'
+
+
 export default {
 	install(Vue) {
 
@@ -39,6 +47,9 @@ export default {
 		Vue.component('tree-menu', treeMenu)
 		Vue.component('page-head', pageHead)
 		Vue.component('page-editor', pageEditor)
+		Vue.component('page-echarts', pageEcharts)
+		Vue.component('echarts-code-editor',echartsCodeEditor)
+
 		Vue.component("list-where", listWhere);
 		Vue.component('calc', calc)
 		Vue.component('layout-editor', layoutEditor)
@@ -67,6 +78,8 @@ export default {
 		Vue.component("sys-roule-editor", sysRouleEditor);
 
 
+
+		Vue.component("echarts", echarts);
 
 
 	}

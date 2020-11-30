@@ -2,7 +2,7 @@
 	<div>
 		<div class="flex-s" style="line-height: 40px;" :class="rowClass">
 			<slot v-if="$slots.after" name="before"></slot>
-			<div v-if="item.visabled==undefined||item.visabled==true" v-for="(item,i) in wlayout" :key="i" class="flex-s" :class="columnClass" :style="rowCss">
+			<div v-if="item.visabled==undefined||item.visabled==true" v-for="(item,i) in wlayout" :key="i" class="flex-s" :style="rowCss">
 				<slot name="before" :data="{row:item,form:form,index:i}"></slot>
 				<div class="padding-left10 padding-right6 flex-no-chang-width">{{item.label}}:</div>
 				<div v-if="item.type=='text'">
@@ -14,10 +14,16 @@
 						</el-option>
 					</el-select>
 				</div>
+				<div v-if="item.type=='date'">
+					<el-date-picker :disabled="item.readonly" :default-value="wdata[item['prop']]" :picker-options="{disabledDate: item['disabledDate']||null,shortcuts:item['shortcuts']||null,}"
+					 v-model="wdata[item['prop']]" :type="item['dateType']" :format="item['format']||'yyyy-MM-dd HH:mm:ss'"
+					 placeholder="选择日期">
+					</el-date-picker>
+				</div>
 				<slot name="after" :data="{row:item,form:form,index:i}"></slot>
 			</div>
-			<div v-if="$slots.toolsBtn" class="btn p-l10">
-				<el-button type="primary">搜索</el-button>
+			<div v-if="!$slots.toolsBtn&&!$scopedSlots.toolsBtn" class="btn p-l10">
+				<el-button type="primary" @click="getWhere">搜索</el-button>
 			</div>
 			<div class="flex-s p-l5" v-else>
 				<slot name="toolsBtn" :data="form"></slot>
@@ -30,10 +36,6 @@
 <script>
 	export default {
 		props: {
-      columnClass:{
-        type: String,
-        default: ''
-      },
 			allVisabled: {
 				tyep: Boolean,
 				default: false
@@ -76,6 +78,7 @@
 			}
 		},
 		methods: {
+			
 			getWhere() {
 				this.$emit("where", this.form)
 			},

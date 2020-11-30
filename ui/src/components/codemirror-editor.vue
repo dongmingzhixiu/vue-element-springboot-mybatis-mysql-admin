@@ -1,7 +1,7 @@
 <template>
 	<div style="position: relative;height: 100%;width: 100%;box-sizing: border-box;">
 		<div v-if="$slots.btn" class="f-b tip-i b-i2">
-			<div class="f-b">
+			<div class="f-b w">
 				<slot name="btn"></slot>
 			</div>
 		</div>

@@ -102,10 +102,12 @@ const getLayout = function(menuId, Vue) {
 						let columns = getFilterDataJSON(res.data, 1);
 						let where = getFilterDataJSON(res.data, 2);
 						let editor = getFilterDataJSON(res.data, 3);
+						let charts = getFilterDataJSON(res.data, 4);
 						let data = {
 							where: where,
 							columns: columns,
-							editor: editor
+							editor: editor,
+              charts:charts
 						};
 						layoutCache.set(menuId, data);
 						resolve(data);

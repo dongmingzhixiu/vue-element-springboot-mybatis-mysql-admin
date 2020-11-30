@@ -6,7 +6,12 @@ const request = apiReq.request;
 
 
 const api = {
-
+	
+	//获取echart数据
+	getChartData:function(methodName,methodType,data){
+		return request(`/charts/${methodName}`,  data,methodType)
+	},
+	
   getFileContext: function(data) {
     return request('/file/getContext', data, 'GET')
   },

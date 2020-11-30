@@ -1,5 +1,5 @@
 server:
-  port: 8066
+  port: 8077
 spring:
   http:
   encoding:
@@ -19,7 +19,7 @@ spring:
 #    url: jdbc:oracle:thin:@127.0.0.1:1521:TIELU
     url: jdbc:mysql://127.0.0.1:3306/frame?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=GMT%2B8
     username: root
-    password: root
+    password: rcz@123456
 
   servlet:
     #文件上传
